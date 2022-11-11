@@ -1,0 +1,180 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+p,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+ 
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+
+
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+   
+  }
+ 
+
+ 
+  .menu {
+    display: flex;
+  }
+  
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-item {
+    margin-right: 32px;
+    color:black
+   
+  }
+  .menu-item:last-child {
+    margin-right: 0;
+  }
+  .item-color{
+    color:blue
+  }
+  /* .item-color span{
+    color:black;
+
+  } */
+  .menu-link {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #333333;
+  }
+  .btn-link{
+    padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background-color: #270cc0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  }
+  
+
+  /* -----main----- */
+  main{
+    padding-top: 150px;
+  }
+  .main-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+  }
+  .scrool{
+   width:600px;
+   height: 600px;
+   /* height: 100vh; */
+
+   justify-content: center;
+   overflow-y: scroll;
+
+  scroll-behavior: smooth;
+  }
+  h1{
+
+position: relative;
+top:0;
+left: 0;
+margin-bottom: 2rem;
+/* top: -10%;
+left: 10%; */
+
+font-size: 40px;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+  
+  .img{
+    width: 600px;
+    /* width: 600px; */
+    height: 600px;
+    padding: 50px;
+
+    
+    /* padding: 0 30px 30px 20; */
+    /* background-image: url(../img/squad-img.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+  }
+  .img img{
+    display: block;
+    width: 100%;
+  }
+  p{
+    margin-bottom: 2rem;
+    line-height: 155%;
+  }
+
+ @media (max-width:1156px){
+  .header{
+    
+  }
+  .menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+ }
